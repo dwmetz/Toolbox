@@ -15,9 +15,11 @@ that don't really need their own repository.
 <p>
 <div align="left">
 
+>- ExtractSamples.py - Recursively traverses directory and extracts all password protected malware samples.
+
 >- Strings2Yara.py - takes the input of strings.txt, prompts for metadata, and produces formatted YARA rule.
 
->- ExtractSamples.py - Recursively traverses directory and extracts all password protected malware samples.
+
 
 
 
