@@ -25,7 +25,6 @@ def create_yara_rule(rule_name, author, description, hash_value, strings_file):
             yara_rule += f'\t$s{id} = "{line.strip()}"\n\t'
     yara_rule += '\n'
     yara_rule += '\tcondition:\n'
-    yara_rule += '\t\tuint16be(0) == 0x4d5a and\n'
     yara_rule += '\t\tall of them\n}\n'
 
     return yara_rule
