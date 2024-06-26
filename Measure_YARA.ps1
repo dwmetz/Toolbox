@@ -14,8 +14,9 @@ param (
     [string]$Option
 )
 ## Variables - This is the only area you should need to modify.
-$1rule = 'C:\Tools\yara\wcry.yara'                      # point to a single YARA rule.
+$1_rule = 'C:\Tools\yara\wcry.yara'                     # point to a single YARA rule.
 $rule_dir = 'C:\Tools\yara\RL_rules'                    # Adjust to your YARA rules directory$EpochTime = Get-Date -UFormat "%s"
+$c_rule = 'C:\Tools\yara\combined_rule.yara'            # combine all the rules from a directory into one with Combine_YARA.ps1
 ## 'make no changes after here'.
 $time = Get-Date
 $error_log = "C:\Tools\yara\logs\log-$EpochTime.log"    # Error log, unique log per timestamp started
@@ -31,7 +32,7 @@ switch ($Option) {
         Write-Host ''
         Write-Host -Fore Cyan "YARA Matches:"
         Write-Host ''
-        & 'C:\Tools\Yara\yara64.exe' -r $1rule $scan_dir 2>> $error_log
+        & 'C:\Tools\Yara\yara64.exe' -r $1_rule $scan_dir 2>> $error_log
         }
     'a' {
         Write-host ''
@@ -52,7 +53,7 @@ switch ($Option) {
         Write-Host ''
         Write-Host -Fore Cyan "YARA Matches:"
         Write-Host ''
-        & 'C:\Tools\Yara\yara64.exe' -r $1rule $scan_dir 2>> $error_log
+        & 'C:\Tools\Yara\yara64.exe' -r $c_rule $scan_dir 2>> $error_log
         }    
     Default {
         Write-Host ''
