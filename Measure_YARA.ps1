@@ -6,20 +6,20 @@ Script will accept the input of
 - a for *all* rules,
 - c for *combined* rule
 
-example:  yara.ps1 1
+example:  measure_yara.ps1 1
 #>
 param (
     [Parameter(Position=0)]
     [ValidateSet('1', 'a', 'c')]
     [string]$Option
 )
-$EpochTime = Get-Date -UFormat "%s"
-$time = Get-Date
-## Variables
+## Variables - This is the only area you should need to modify.
 $1rule = 'C:\Tools\yara\wcry.yara'                      # point to a single YARA rule.
-$rule_dir = 'C:\Tools\yara\RL_rules'                    # Adjust to your YARA rules directory
-$scan_dir = 'C:\'                                       # Adjust to the directory you want to scan
+$rule_dir = 'C:\Tools\yara\RL_rules'                    # Adjust to your YARA rules directory$EpochTime = Get-Date -UFormat "%s"
+## 'make no changes after here'.
+$time = Get-Date
 $error_log = "C:\Tools\yara\logs\log-$EpochTime.log"    # Error log, unique log per timestamp started
+$scan_dir = 'C:\'                                       # Adjust to the directory you want to scan
 ## Time and stopwatch initialization
 $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
 ## Switch statements to execute based on parameter
