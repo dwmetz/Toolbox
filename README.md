@@ -10,9 +10,13 @@
 </h5>
 <h4>
 Miscellaneous PowerShell and Python scripts related to YARA and Malware Analysis.
-
-
 </h4>
+
+<h5>Note: All of these tools or improved equivalents are available in 
+ 
+ [MalChela, the Rust based YARA & Malware Analysis Toolkit](https://github.com/dwmetz/MalChela)
+ 
+</h5>
 <p>
 <div align="left">
 
