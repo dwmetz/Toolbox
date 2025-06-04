@@ -28,6 +28,8 @@ Miscellaneous PowerShell and Python scripts related to YARA and Malware Analysis
 
 >- `Strings2Yara.py - takes the input of strings.txt, prompts for metadata, and produces formatted YARA rule.`
 
+>- `Tshark_to_CSV.py - takes the input of a pcap file, runs tshark against it (must be in PATH), converts timestamps, and zips.`
+
 >- `XMZMD5.py : Recursively traverses a directory and produces a hash set of all files without a MZ, PDF or ZIP header identified by YARA.`
 
 
