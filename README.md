@@ -12,10 +12,11 @@
 Miscellaneous PowerShell and Python scripts related to YARA and Malware Analysis.
 </h4>
 
-<h5>Note: All of these tools or improved equivalents are available in 
+<h5>Note: MANY of these tools or improved equivalents are available in 
  
  [MalChela, the Rust based YARA & Malware Analysis Toolkit](https://github.com/dwmetz/MalChela)
- 
+
+ ** Not in MalChela
 </h5>
 <p>
 <div align="left">
@@ -23,10 +24,10 @@ Miscellaneous PowerShell and Python scripts related to YARA and Malware Analysis
 | Program             | Function |
 |---------------------|----------|
 | Combine_YARA.ps1    | Takes a directory of YARA rules and converts them into one combined rule |
-| CoreBreaker.py      | Breaks the large yara-rules-core files into smaller .yar files for tool ingestion |
+| ** CoreBreaker.py   | Breaks the large yara-rules-core files into smaller .yar files for tool ingestion |
 | ExtractSamples.py   | Recursively traverses directory and extracts all password protected malware samples |
-| EtTu.py             | Caesar cipher brute force decoder (Murdle :)
-| Measure_YARA.ps1    | Benchmarking script for calculating YARA executions |
+| ** EtTu.py          | Caesar cipher brute force decoder (Murdle :)
+| ** Measure_YARA.ps1 | Benchmarking script for calculating YARA executions |
 | MZCount.py          | Recursively traverses a directory and produces a count of file types (MZ, PDF, ZIP, Other) identified by YARA |
 | MZMD5.py            | Recursively traverses a directory and produces a hash set of all files with a MZ header identified by YARA |
 | Strings2Yara.py     | Takes the input of strings.txt, prompts for metadata, and produces formatted YARA rule |
