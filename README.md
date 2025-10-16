@@ -16,7 +16,7 @@ Miscellaneous PowerShell and Python scripts related to YARA and Malware Analysis
  
  [MalChela, the Rust based YARA & Malware Analysis Toolkit](https://github.com/dwmetz/MalChela)
 
- ** Not in MalChela
+ ** = Not in MalChela
 </h5>
 <p>
 <div align="left">
