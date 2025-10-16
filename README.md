@@ -23,7 +23,9 @@ Miscellaneous PowerShell and Python scripts related to YARA and Malware Analysis
 | Program             | Function |
 |---------------------|----------|
 | Combine_YARA.ps1    | Takes a directory of YARA rules and converts them into one combined rule |
+| CoreBreaker.py      | Breaks the large yara-rules-core files into smaller .yar files for tool ingestion |
 | ExtractSamples.py   | Recursively traverses directory and extracts all password protected malware samples |
+| EtTu.py             | Caesar cipher brute force decoder (Murdle :)
 | Measure_YARA.ps1    | Benchmarking script for calculating YARA executions |
 | MZCount.py          | Recursively traverses a directory and produces a count of file types (MZ, PDF, ZIP, Other) identified by YARA |
 | MZMD5.py            | Recursively traverses a directory and produces a hash set of all files with a MZ header identified by YARA |
