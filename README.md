@@ -9,7 +9,7 @@
   <div align="center">   
 </h5>
 <h4>
-Miscellaneous PowerShell and Python scripts related to YARA and Malware Analysis.
+Miscellaneous PowerShell and Python scripts related to YARA, Malware and Timeline Analysis.
 </h4>
 
 <h5>Note: MANY of these tools or improved equivalents are available in 
